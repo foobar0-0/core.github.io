@@ -26,19 +26,40 @@
 p {
     font-family: 'Tex';
 }
-
+body{
+    /*border:2px solid purple;*/
+    background-image: linear-gradient(#97cbd1, #003551);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 .container {
     display: grid;
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(#97cbd1, #003551);
     /*background-color: #262626;
     /*overflow: hidden;*/
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     /*border: 2px solid green;*/
 }
-
+@media (max-width: 600px) {
+.container{
+    grid-template-rows: 30% 10% 60% ;
+    grid-template-columns: 100%;
+}
+.row1{
+    grid-row: 1;
+    height: 100%;
+}
+.row2{
+    grid-row: 3;
+    height:100%;
+}
+.row3{
+    grid-row: 3;
+    height:100%;
+}
+}
 .row1 {
     margin: 10%;
     grid-row: 1;
@@ -130,7 +151,6 @@ form {
 
 .row3 {
     /*border: 2px solid firebrick;*/
-    border-radius: 12px;
     grid-row:span 2;
     background-color: #00355100;
     margin: 10%;

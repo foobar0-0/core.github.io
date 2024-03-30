@@ -191,6 +191,9 @@ form {
     color: #97cbd1;
 }
 @media (max-width: 600px) {
+    .sub-links {
+        grid-template-columns: auto auto;
+    }
     #day{
         font-size: 12vw;
     }

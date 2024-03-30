@@ -1,0 +1,172 @@
+* {
+    /**Add a css reset to the top of your website style sheet, different browsers render some default
+     margin and padding and perhaps external style sheets do something you are not aware of too, 
+     a css reset will just initialize a fresh palette so to speak**/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Tex;
+    src: url('texgyreheros.gyreheros-regular.otf');
+}
+
+@font-face {
+    font-family: Tex;
+    font-weight: bold;
+    src: url('texgyreheros.gyreheros-bold.otf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+p {
+    font-family: 'Tex';
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(#97cbd1, #003551);
+    /*background-color: #262626;
+    /*overflow: hidden;*/
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    /*border: 2px solid green;*/
+}
+
+.row1 {
+    margin: 10%;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    /*border: 2px solid forestgreen;*/
+}
+
+/*.info {
+    /*border: 2px solid fuchsia;
+}*/
+
+#day {
+    font-family:'Rubik', sans-serif;
+    color: #262626;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+/*.main-links {
+    /*border: 2px solid yellow;
+}*/
+
+/*.links {
+    /*border: 2px solid white;
+}*/
+
+.links>li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.links>li>a {
+    text-decoration: none;
+    font-family: 'Rubik';
+    font-weight: 600;
+    color: #262626;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.row2 {
+    /*border:2px solid lightcoral;*/
+    grid-row: 2;
+    margin:10%;
+    display: flex;
+    /*align-items: center;*/
+}
+
+form {
+    width: 100%;
+}
+
+.search-bar {
+    height: 40px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #97cbd1;
+    /*border: 2px solid seagreen;*/
+}
+
+.insert {
+    width: 75%;
+    font-family: 'Tex';
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 10px;
+    padding-left: 20px;
+    /*border: 2px solid firebrick;*/
+}
+
+.go {
+    width: 20%;
+    height: 100%;
+    color: #003551;
+    font-family: 'Tex';
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+    /*border: 2px solid khaki;*/
+}
+
+.row3 {
+    /*border: 2px solid firebrick;*/
+    border-radius: 12px;
+    grid-row:span 2;
+    background-color: #00355100;
+    margin: 10%;
+}
+
+.link_container {
+    display:flex;
+    width: auto;
+    height: 100%;
+    padding:20px;
+    /*border: 2px solid teal;*/
+}
+
+.sub-links {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    padding-left: 0;
+    /*align-content: center;*/
+    justify-content: space-between;
+    list-style: none;
+    /*border: 2px solid black;*/
+
+}
+
+.sub-links>li {
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.sub-links>li>a {
+    font: 10px 'Tex';
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.sub-links>li>a:hover {
+    color: #97cbd1;
+}

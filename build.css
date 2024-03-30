@@ -44,7 +44,7 @@ body{
 }
 @media (max-width: 600px) {
 .container{
-    grid-template-rows: 30% 10% 60% ;
+    grid-template-rows: 20% 10% 60% ;
     grid-template-columns: 100%;
 }
 .row1{
@@ -75,7 +75,7 @@ body{
 #day {
     font-family:'Rubik', sans-serif;
     color: #262626;
-    font-size: 60px;
+    font-size: 5vw;
     font-weight: 300;
 }
 
@@ -97,7 +97,7 @@ body{
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
     color: #262626;
-    font-size: 12px;
+    font-size: 1vw;
     text-transform: uppercase;
 }
 
@@ -160,8 +160,8 @@ form {
     display:flex;
     width: auto;
     height: 100%;
-    padding:20px;
-    /*border: 2px solid teal;*/
+    /*padding:20px;
+    border: 2px solid teal;*/
 }
 
 .sub-links {
@@ -182,11 +182,22 @@ form {
 }
 
 .sub-links>li>a {
-    font: 10px 'Tex';
+    font: 0.8vw 'Tex';
     color: #eeeeee;
     text-decoration: none;
 }
 
 .sub-links>li>a:hover {
     color: #97cbd1;
+}
+@media (max-width: 600px) {
+    #day{
+        font-size: 12vw;
+    }
+    .links>li>a {
+        font-size: 3vw;
+    }
+    .sub-links>li>a {
+        font-size: 3vw;
+    }
 }

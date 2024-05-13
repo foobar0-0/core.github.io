@@ -22,16 +22,21 @@
     font-weight: bold;
     src: url('texgyreheros.gyreheros-bold.otf');
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
 p {
     font-family: 'Tex';
 }
-body{
+
+body {
     /*border:2px solid purple;*/
-    background-image: linear-gradient(#003551,#8c8c8c);
+    /*background-image: linear-gradient(#003551,#8c8c8c);*/
+    background-color: #999999;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+
 .container {
     display: grid;
     height: 100vh;
@@ -42,24 +47,29 @@ body{
     grid-template-rows: 50% 50%;
     /*border: 2px solid green;*/
 }
+
 @media (max-width: 600px) {
-.container{
-    grid-template-rows: 20% 10% 60% ;
-    grid-template-columns: 100%;
+    .container {
+        grid-template-rows: 20% 10% 60%;
+        grid-template-columns: 100%;
+    }
+
+    .row1 {
+        grid-row: 1;
+        height: 100%;
+    }
+
+    .row2 {
+        grid-row: 3;
+        height: 100%;
+    }
+
+    .row3 {
+        grid-row: 3;
+        height: 100%;
+    }
 }
-.row1{
-    grid-row: 1;
-    height: 100%;
-}
-.row2{
-    grid-row: 3;
-    height:100%;
-}
-.row3{
-    grid-row: 3;
-    height:100%;
-}
-}
+
 .row1 {
     margin: 10%;
     grid-row: 1;
@@ -73,7 +83,7 @@ body{
 }*/
 
 #day {
-    font-family:'Rubik', sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #eeeeee;
     font-size: 5vw;
     font-weight: 300;
@@ -104,7 +114,7 @@ body{
 .row2 {
     /*border:2px solid lightcoral;*/
     grid-row: 2;
-    margin:10%;
+    margin: 10%;
     display: flex;
     /*align-items: center;*/
 }
@@ -151,12 +161,12 @@ form {
 
 .row3 {
     /*border: 2px solid firebrick;*/
-    grid-row:span 2;
+    grid-row: span 2;
     margin: 10%;
 }
 
 .link_container {
-    display:flex;
+    display: flex;
     width: auto;
     height: 100%;
     /*padding:20px;
@@ -189,16 +199,20 @@ form {
 .sub-links>li>a:hover {
     color: #97cbd1;
 }
+
 @media (max-width: 600px) {
     .sub-links {
-        grid-template-columns: auto  auto auto;
+        grid-template-columns: auto auto auto;
     }
-    #day{
+
+    #day {
         font-size: 12vw;
     }
+
     .links>li>a {
         font-size: 3vw;
     }
+
     .sub-links>li>a {
         font-size: 2.5vw "Tex";
     }

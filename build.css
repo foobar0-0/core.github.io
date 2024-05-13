@@ -127,7 +127,7 @@ form {
     height: 40px;
     position: relative;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 30px;
     background-color: #262626;
     /*border: 2px solid seagreen;*/
 }

@@ -84,7 +84,7 @@ body {
 
 #day {
     font-family: 'Rubik', sans-serif;
-    color: #eeeeee;
+    color: #003551;
     font-size: 5vw;
     font-weight: 300;
 }
@@ -106,7 +106,7 @@ body {
     text-decoration: none;
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
-    color: #eeeeee;
+    color: #003551;
     font-size: 1vw;
     text-transform: uppercase;
 }
@@ -197,7 +197,7 @@ form {
 }
 
 .sub-links>li>a:hover {
-    color: #97cbd1;
+    color: #003551;
 }
 
 @media (max-width: 600px) {

@@ -32,7 +32,7 @@ p {
 body {
     /*border:2px solid purple;*/
     /*background-image: linear-gradient(#003551,#8c8c8c);*/
-    background-color: #999999;
+    background-color: #B5B8BC;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -84,7 +84,7 @@ body {
 
 #day {
     font-family: 'Rubik', sans-serif;
-    color: #003551;
+    color: #eeeeee;
     font-size: 5vw;
     font-weight: 300;
 }
@@ -105,8 +105,8 @@ body {
 .links>li>a {
     text-decoration: none;
     font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    color: #003551;
+    font-weight: 500;
+    color: #eeeeee;
     font-size: 1vw;
     text-transform: uppercase;
 }
@@ -128,7 +128,7 @@ form {
     position: relative;
     box-sizing: border-box;
     border-radius: 30px;
-    background-color: #003551;
+    background-color: #869397;
     /*border: 2px solid seagreen;*/
 }
 
@@ -147,7 +147,7 @@ form {
 .go {
     width: 20%;
     height: 100%;
-    color: #8c8c8c;
+    color: #B5B8BC;
     font-family: 'Tex';
     font-weight: bold;
     position: absolute;

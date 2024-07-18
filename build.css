@@ -12,21 +12,10 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: Tex;
-    src: url('texgyreheros.gyreheros-regular.otf');
-}
-
-@font-face {
-    font-family: Tex;
-    font-weight: bold;
-    src: url('texgyreheros.gyreheros-bold.otf');
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
 p {
-    font-family: 'Tex';
+    font-family: "Inter Tight", sans-serif;
 }
 
 body {

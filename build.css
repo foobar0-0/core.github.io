@@ -73,7 +73,6 @@ body {
 }*/
 
 #day {
-    font-family: 'Rubik', sans-serif;
     color: #eeeeee;
     font-size: 5vw;
     font-weight: 300;
@@ -94,7 +93,6 @@ body {
 
 .links>li>a {
     text-decoration: none;
-    font-family: 'Rubik', sans-serif;
     font-weight: 500;
     color: #eeeeee;
     font-size: 1vw;
@@ -124,7 +122,6 @@ form {
 
 .insert {
     width: 75%;
-    font-family: 'Tex';
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -138,7 +135,6 @@ form {
     width: 20%;
     height: 100%;
     color: #B5B8BC;
-    font-family: 'Tex';
     font-weight: bold;
     position: absolute;
     top: 50%;
@@ -181,7 +177,7 @@ form {
 }
 
 .sub-links>li>a {
-    font: 0.8vw 'Tex';
+    font-size: 0.8vw;
     color: #eeeeee;
     text-decoration: none;
 }

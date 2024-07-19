@@ -10,13 +10,10 @@
     vertical-align: baseline;
     background: transparent;
     box-sizing: border-box;
+    font-family: "Inter Tight", sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
-
-p {
-    font-family: "Inter Tight", sans-serif;
-}
 
 body {
     /*border:2px solid purple;*/
@@ -24,7 +21,6 @@ body {
     background-color: #003551;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    font-family: "Inter Tight", sans-serif;
 }
 
 .container {

@@ -31,7 +31,7 @@ body {
     width: 100vw;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap:5px;
+    grid-gap: 5px;
     /*border: 2px solid green;*/
     padding: 5px;
 }
@@ -123,34 +123,44 @@ label {
 .sub-links>li>a:hover {
     color: #B5B8BC;
 }
-.block4{
+
+.block4 {
     grid-area: 1/2/3/3;
 }
+
 #todo-list {
     list-style: none;
-    color: #ffffff;
     padding: 0;
 }
+
 #todo-list li {
     padding: 10px;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+    background-color: #000;
+    /* Black background */
+    color: #fff;
+    /* White text */
     margin-bottom: 5px;
     border-radius: 3px;
     display: flex;
     justify-content: space-between;
 }
+
 #todo-list li span {
     margin-right: 10px;
 }
+
 button {
-    background-color: #fff; /* White button */
-    color: #000; /* Black text for the button */
+    background-color: #fff;
+    /* White button */
+    color: #000;
+    /* Black text for the button */
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 3px;
 }
+
 button:hover {
-    background-color: #ccc; /* Light gray hover effect */
+    background-color: #ccc;
+    /* Light gray hover effect */
 }

@@ -98,31 +98,27 @@
 
         </div>
         <div class="blocks block4">
-            <h1>To-Do List</h1>
-            <input type="text" id="new-task" placeholder="Add new task..." />
-            <button onclick="addTask()">Add Task</button>
-            <ul id="todo-list"></ul>
-            <script>
-                function addTask() {
-                    const taskInput = document.getElementById('new-task');
-                    const taskText = taskInput.value;
+            <ul class="links">
+                <li><a href="https://www.reddit.com/?app-install-source=microsoft-store">
+                        REDDIT
+                    </a></li>
+                <li><a href="https://twitter.com/home">
+                        TWITTER
+                    </a></li>
+                <li><a href="https://courses.stationx.net/courses/enrolled/226180">
+                        STATIONX
+                    </a></li>
+                <li><a href="https://in.pinterest.com/homefeed/">
+                        PINTEREST
+                    </a></li>
+                <li><a href="https://photos.google.com/">
+                        PHOTOS
+                    </a></li>
+                <li><a href="https://www.behance.net/foobar0_0/appreciated">
+                        BEHANCE
+                    </a></li>
+            </ul>
 
-                    if (taskText === '') return;
-
-                    // Add task to the HTML list
-                    const li = document.createElement('li');
-                    li.innerHTML = `<span>${taskText}</span> <button onclick="removeTask(this)">Remove</button>`;
-                    document.getElementById('todo-list').appendChild(li);
-
-                    // Clear input
-                    taskInput.value = '';
-                }
-
-                function removeTask(button) {
-                    const li = button.parentElement;
-                    li.remove();
-                }
-            </script>
         </div>
     </div>
 </body>

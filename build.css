@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: MSGothic;
+    src: url(/MS\ Gothic.ttf);
+}
+
 *,
 *:before,
 *:after {
@@ -14,15 +21,13 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
-    font-family: "Inter Tight", sans-serif;
+    font-family: "MSGothic", sans-serif;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     /*border:2px solid purple;*/
-    background-color: #000;
-    color: #ffffff;
+    background-color: #869397;
+    color: #eeeeee;
 }
 
 .container {
@@ -31,16 +36,16 @@ body {
     width: 100vw;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
+    grid-gap: 10px;
     /*border: 2px solid green;*/
-    padding: 5px;
+    padding: 10px;
 }
 
 .blocks {
     width: 100%;
     height: 100%;
     padding: 10px;
-    border-left: 1px solid #4d4d4d;
+    border-left: 1px solid #B5B8BC;
     position: relative;
 }
 
@@ -51,7 +56,8 @@ body {
 #day {
     font-size: 2rem;
     position: absolute;
-    top: 50%;
+    /*top: 50%;*/
+    text-transform: uppercase;
 }
 
 .block2 {
@@ -65,7 +71,7 @@ body {
 .bar {
     width: 100%;
     background-color: transparent;
-    border: 1px solid #ffffff;
+    border: 1px solid #eeeeee;
     border-radius: 0px;
     overflow: hidden;
     position: relative;
@@ -75,23 +81,22 @@ body {
     display: block;
     height: 15px;
     line-height: 15px;
-    color: #fff;
+    color: #eeeeee;
     text-align: left;
     padding-left: 10px;
-    background-color: #ffffff;
+    background-color: #eeeeee;
     width: 0;
     transition: width 0.5s;
-    color: #000000;
-    font-size: 0.8rem;
+    color: #869397;
+    font-size: 1rem;
 }
 
 label {
     display: block;
     margin-bottom: 10px;
     color: #ffffff;
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: 500;
-
 }
 
 .block3 {
@@ -115,7 +120,7 @@ label {
 }
 
 .sub-links>li>a {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: #ffffff;
     text-decoration: none;
 }
@@ -128,36 +133,15 @@ label {
     grid-area: 1/2/3/3;
 }
 
-#todo-list {
-    list-style: none;
-    padding: 0;
+.links>li {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #B5B8BC;
 }
 
-#todo-list li {
-    padding: 10px;
-    background-color: #000;
-    /* Black background */
-    color: #fff;
-    /* White text */
-    margin-bottom: 5px;
-    border-radius: 3px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#todo-list li span {
-    margin-right: 10px;
-}
-
-button {
-    background-color: #fff;
-    color: #000;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #ccc;
-    /* Light gray hover effect */
+.links>li>a {
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 1rem;
+    text-transform: uppercase;
 }

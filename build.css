@@ -134,9 +134,9 @@ label {
 }
 
 .links>li {
-    display: inline-block;
+    display: block;
     padding: 10px 10px;
-    border: 1px solid #B5B8BC;
+    border-bottom: 1px solid #B5B8BC;
 }
 
 .links>li>a {

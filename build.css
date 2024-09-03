@@ -45,12 +45,11 @@ body {
     width: 100%;
     height: 100%;
     padding: 10px;
-    border-left: 1px solid #B5B8BC;
     position: relative;
 }
 
 .block1 {
-    grid-area: 1/1/2/2;
+    grid-area: 2/1/3/2;
 }
 
 #day {
@@ -61,7 +60,7 @@ body {
 }
 
 .block2 {
-    grid-area: 2/1/2/2;
+    grid-area: 3/1/4/2;
 }
 
 .progress-bar {
@@ -100,7 +99,7 @@ label {
 }
 
 .block3 {
-    grid-area: 1/3/4/5;
+    grid-area: 2/3/5/5;
 }
 
 .sub-links {
@@ -130,7 +129,7 @@ label {
 }
 
 .block4 {
-    grid-area: 1/2/2/3;
+    grid-area: 4/1/5/2;
 }
 
 .links>li {
@@ -144,4 +143,9 @@ label {
     color: #eeeeee;
     font-size: 1rem;
     text-transform: uppercase;
+}
+
+.block5{
+    grid-area: 2/2/5/3;
+    background-color: #B5B8BC;
 }

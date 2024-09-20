@@ -318,3 +318,8 @@ input[type=radio] {
 #list-buttons {
     flex: 1;
 }
+
+#app-info{
+    font-size: 14px;
+    color: var(--text-color-sec);
+}

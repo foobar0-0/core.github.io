@@ -252,7 +252,7 @@ input[type=radio] {
 .link-lists {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 15%);
     gap: var(--gap-sr);
 }
 

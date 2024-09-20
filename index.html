@@ -6,172 +6,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="private">
     <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
     <link rel="stylesheet" href="build.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="blocks block1">
-            <p id="day">Hello</p>
-        </div>
-        <div class="blocks block2">
-            <div class="progress-bar">
-                <label for="day-progress">Day</label>
-                <div class="bar" id="day-progress-bar"><span id="day-progress">0%</span></div>
+        <div id="link-dialog" class="modal">
+            <div id="add-modal" class=" modals vertical gap-15">
+                <span id="close-btn">&times;</span>
+                <h2>Add a New Link</h2>
+                <label for="link-name">Link Name:</label>
+                <input type="text" id="link-name" placeholder="Enter link name" required>
+                <label for="link-url">Link URL:</label>
+                <input type="text" id="link-url" placeholder="Enter link URL" required>
+                <label>Select List:</label>
+                <div class=" horizontal gap-60">
+                    <div>
+                        <input type="radio" id="primary" name="link-list" value="primary">
+                        <label for="primary">Primary List</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="secondary" name="link-list" value="secondary checked">
+                        <label for="secondary">Secondary List</label>
+                    </div>
+                </div>
+                <button id="submit-link" class="button-pr">Add Link</button>
             </div>
-            <div class="progress-bar">
-                <label for="month-progress">Month</label>
-                <div class="bar" id="month-progress-bar"><span id="month-progress">0%</span></div>
+            <div id="settings-modal" class="modals vertical gap-15">
+                <span id="close-btn">&times;</span>
+                <h2>Change Theme Settings</h2>
+                <label>Background Color:</label>
+                <input type="color" id="bg-color-input">
+                <label>Text Color:</label>
+                <input type="color" id="text-color-input">
+                <label>Secondary Text Color:</label>
+                <input type="color" id="text-color-sec-input">
+                <button id="save-settings-btn" class="button-pr">Save Changes</button>
             </div>
-            <div class="progress-bar">
-                <label for="year-progress">Year</label>
-                <div class="bar" id="year-progress-bar"><span id="year-progress">0%</span></div>
+        </div>
+        <div class="vertical gap-15" id="section1">
+            <p class="heading" id="date">Hello</p>
+            <div class="vertical" id="date-progress">
+                <div class="horizontal gap-15 ">
+                    <div class="progress-container ">
+                        <div class="progress-bar" id="day-progress-bar"></div>
+                    </div>
+                    <p class="upper">Day</p>
+                    <p id="day-progress">0%</p>
+                </div>
+                <div class="horizontal gap-15">
+                    <div class="progress-container">
+                        <div class="progress-bar" id="month-progress-bar"></div>
+                    </div>
+                    <p class="upper">Month</p>
+                    <p id="month-progress">0%</p>
+                </div>
+                <div class="horizontal gap-15">
+                    <div class="progress-container">
+                        <div class="progress-bar" id="year-progress-bar"></div>
+                    </div>
+                    <p class="upper">Year</p>
+                    <p id="year-progress">0%</p>
+                </div>
             </div>
         </div>
-        <div class="blocks block3">
-            <ul class="sub-links">
-                <li><a href="https://sanji.to/home">Zoro</a></li>
-                <li><a href="https://drive.google.com/drive/u/1/my-drive">drive</a></li>
-                <li><a href="https://to-do.live.com/tasks/today">ToDo</a></li>
-                <li><a href="https://www.youtube.com/">YouTube</a></li>
-                <li><a href="https://www.amazon.in/">Amazon</a></li>
-                <li><a href="https://www.hotstar.com/in">Hotstar</a></li>
-                <li><a href="https://web.whatsapp.com/">Whatsapp</a></li>
-                <li><a href="https://fonts.google.com/">Fonts</a></li>
-                <li><a href="https://www.behance.net/foobar0_0/appreciated">Behance</a></li>
-                <li><a href="https://www.freepik.com/">Freepik</a></li>
-                <li><a href="https://developer.android.com/guide">Android DVLPR</a></li>
-                <li><a href="https://www.instagram.com/">Instagram</a></li>
-                <li><a href="https://open.spotify.com/">Spotify</a></li>
-                <li><a href=https://www.canva.com/colors/color-palette-generator />Plt gnrtr</a></li>
-                <li><a href="https://unsplash.com/@foobar0_0">Unsplash</a></li>
-                <li><a href="https://student.onlinemanipal.com/s/">Manipal</a></li>
-                <li><a href="https://thingqbator.nasscomfoundation.org/home/dashboard">Nasscom</a></li>
-                <li><a href="https://www.searchsystem.co/">SearchSystem</a></li>
-                <li><a href="https://ko-fi.com/foobar0_0">Ko-Fi</a></li>
-                <li><a href="https://learning.onlinemanipal.com/d2l/home">LMS</a></li>
-                <li><a href="https://www.primevideo.com/">Prime</a></li>
-                <li><a href="https://brandingstyleguides.com/">Brndng Guide</a></li>
-                <li><a href="https://github.com/">Github</a></li>
-                <li><a href="https://inflact.com/tools/instagram-hashtag-generator/#/topics/">Hash Gen</a></li>
-                <li><a
-                        href="https://www.coursera.org/programs/manipal-university-jaipurs-online-mca-batch-4-moplq?authProvider=unext-manipal">Coursera</a>
-                </li>
-                <li><a href="https://www.paypal.com/mep/dashboard">Paypal</a></li>
-                <li><a href="https://learnweb3.io/">Learn Web3</a></li>
-                <li><a href="https://www.glassdoor.co.in/member/home/index.htm">Glassdoor</a></li>
-                <li><a href="https://chat.openai.com/">OpenAI</a></li>
-                <li><a href="https://student.onlinemanipal.com/s/">Manipal</a></li>
-                <li><a href="https://angel.co/jobs">WellFound</a></li>
-                <li><a href="https://online2pdf.com/">PDF</a></li>
-                <li><a href="https://www.ytechb.com/category/stock-wallpapers/">Ytechb</a></li>
-                <li><a href="https://www.linkedin.com/in/sneha-s-36a5bb265/">LinkedIn</a></li>
-                <li><a href="https://animeheaven.pro/">AnimeHeaven</a></li>
-                <li><a href="https://unsplash.com/@foobar0_0">Unsplash</a></li>
-                <li><a href="https://manage.wix.com/studio/sites">Wix</a></li>
-                <li><a href="https://animeheaven.pro/">AnimeHeaven</a></li>
-                <li><a href="https://www.procurabl.com/">Procurabl</a></li>
-                <li><a href="https://www.linkedin.com/company/procurablsolutions/">Pro Linkedin</a></li>
-                <li><a href="https://inflact.com/tools/instagram-hashtag-generator/#/topics/">Hash Gen</a></li>
-                <li><a
-                        href="https://www.coursera.org/programs/manipal-university-jaipurs-online-mca-batch-4-moplq?authProvider=unext-manipal">Coursera</a>
-                </li>
-                <li><a href="https://www.paypal.com/mep/dashboard">Paypal</a></li>
-                <li><a href="https://learnweb3.io/">Learn Web3</a></li>
-                <li><a href="https://www.glassdoor.co.in/member/home/index.htm">Glassdoor</a></li>
-                <li><a href="https://chat.openai.com/">OpenAI</a></li>
-                <li><a href="https://student.onlinemanipal.com/s/">Manipal</a></li>
-                <li><a href="https://angel.co/jobs">WellFound</a></li>
-                <li><a href="https://online2pdf.com/">PDF</a></li>
-                <li><a href="https://www.ytechb.com/category/stock-wallpapers/">Ytechb</a></li>
-                <li><a href="https://www.linkedin.com/in/sneha-s-36a5bb265/">LinkedIn</a></li>
-                <li><a href="https://animeheaven.pro/">AnimeHeaven</a></li>
-                <li><a href="https://unsplash.com/@foobar0_0">Unsplash</a></li>
-                <li><a href="https://www.labinthewild.org/">Labinthewild</a></li>
-                <li><a href="https://www.notion.so/ec663be735a941038759c71dae7964fe">Notion</a></li>
-                <li><a href="https://www.procurabl.com/">Procurabl</a></li>
-                <li><a href="https://www.linkedin.com/company/procurablsolutions/">Pro Linkedin</a></li>
-                <li><a href="https://sitereport.netcraft.com/">Netcraft</a></li>
-                <li><a href="https://whois.domaintools.com/">WHOis</a></li>
-                <li><a href="https://www.robtex.com/">Robotex</a></li>
-                <li><a href="https://www.flipkart.com/">Flipkart</a></li>
-            </ul>
+        <div class="vertical gap-15" id="section2">
+            <p class="heading upper" id="day">Hello</p>
+            <div id="weather-container" class="horizontal gap-15">
+                <div id="weather-icon"></div>
+                <div class="vertical" id="weather"></div>
+            </div>
         </div>
-        <div class="blocks block4">
-            <ul class="links">
-                <li><a href="https://www.reddit.com/?app-install-source=microsoft-store">
-                        REDDIT
-                    </a></li>
-                <li><a href="https://twitter.com/home">
-                        TWITTER
-                    </a></li>
-                <li><a href="https://courses.stationx.net/courses/enrolled/226180">
-                        STATIONX
-                    </a></li>
-                <li><a href="https://in.pinterest.com/homefeed/">
-                        PINTEREST
-                    </a></li>
-                <li><a href="https://photos.google.com/">
-                        PHOTOS
-                    </a></li>
-                <li><a href="https://www.behance.net/foobar0_0/appreciated">
-                        BEHANCE
-                    </a></li>
-                <li><a href="https://play.google.com/books?pli=1">
-                        BOOKS
-                    </a></li>
-            </ul>
+        <div id="section3">
+            <div id="search-bar">
+                <form id="search-form" action="https://www.google.com/search" method="get" target="_blank">
+                    <input id="search-input" type="text" name="q" placeholder="TYPE TO SEARCH AND PRESS ENTER..."
+                        required>
+                </form>
+            </div>
         </div>
-        <div class="blocks block5">
-
+        <div class="horizontal gap-60 " id="section4">
+            <div class="horizontal gap-60 " id="notes">
+                <p>NOTE</p>
+                <div id="note-container">
+                    <textarea id="note-input" placeholder="Write your note here..."></textarea>
+                </div>
+            </div>
+            <div class="horizontal gap-60 " id="todo">
+                <p>TODO</p>
+                <div class="vertical gap-15" id="todo-container">
+                    <div class="horizontal" id="todo-form">
+                        <input type="text" id="new-task" placeholder="Enter a new task">
+                        <button onclick="addTask()">Add</button>
+                    </div>
+                    <ul id="todo-list"></ul>
+                </div>
+            </div>
         </div>
-        <div class="blocks block6">
-
+        <div class="vertical gap-60 " id="section5">
+            <div id="primary">
+                <div class="horizontal gap-60 " id="primary-links">
+                    <p>PRI</p>
+                    <ul id="primary-list" class="link-lists"></ul>
+                </div>
+            </div>
+            <div id="secondary">
+                <div class="horizontal gap-60 " id="secondary-links">
+                    <p>SEC</p>
+                    <ul id="secondary-list" class="link-lists"></ul>
+                </div>
+            </div>
+        </div>
+        <div id="section6" class="horizontal gap-60">
+            <div id="settings" class="horizontal gap-15">
+                <button id="settings-btn">Settings</button>
+                <p>Dashboard by FOOBAR Studio</p>
+            </div>
+            <div id="list-buttons" class="horizontal gap-15">
+                <button id="add-link-btn">Add Link</button>
+                <button id="edit-link-btn">Edit Link</button>
+            </div>
         </div>
     </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
-<script>
-    function updateProgressBars() {
-        const now = new Date();
 
-        function formatDate(date) {
-            const options = { day: '2-digit', month: 'short', weekday: 'long' };
-            return date.toLocaleDateString('en-US', options);
-        }
-        const formattedDate = formatDate(now);
-        document.getElementById('day').innerText = formattedDate;
-
-        // Day progress
-        const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-        const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
-        const dayProgress = ((now - startOfDay) / (endOfDay - startOfDay)) * 100;
-
-        // Month progress
-        const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
-        const endOfMonth = new Date(now.getFullYear(), now.getMonth() + 1, 1);
-        const monthProgress = ((now - startOfMonth) / (endOfMonth - startOfMonth)) * 100;
-
-        // Year progress
-        const startOfYear = new Date(now.getFullYear(), 0, 1);
-        const endOfYear = new Date(now.getFullYear() + 1, 0, 1);
-        const yearProgress = ((now - startOfYear) / (endOfYear - startOfYear)) * 100;
-
-        // Update DOM
-        document.getElementById('day-progress').innerText = `${dayProgress.toFixed(2)}%`;
-        document.getElementById('day-progress').style.width = `${dayProgress}%`;
-
-        document.getElementById('month-progress').innerText = `${monthProgress.toFixed(2)}%`;
-        document.getElementById('month-progress').style.width = `${monthProgress}%`;
-
-        document.getElementById('year-progress').innerText = `${yearProgress.toFixed(2)}%`;
-        document.getElementById('year-progress').style.width = `${yearProgress}%`;
-    }
-
-    // Initial call
-    updateProgressBars();
-
-    // Update every second
-    setInterval(updateProgressBars, 1000);
-</script>
 
 </html>

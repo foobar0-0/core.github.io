@@ -1,154 +1,320 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
-
-@font-face {
-    font-family: MSGothic;
-    src: url(/MS\ Gothic.ttf);
+:root {
+    --bg-color: black;
+    --text-color: white;
+    --text-color-sec: #aaa;
+    --border-radius: 2px;
+    --border-settings: 1px solid var(--text-color);
+    --gap-pr: 40px;
+    --gap-sr: 10px;
 }
 
-*,
-*:before,
-*:after {
-    /**Add a css reset to the top of your website style sheet, different browsers render some default
-     margin and padding and perhaps external style sheets do something you are not aware of too, 
-     a css reset will just initialize a fresh palette so to speak**/
+* {
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
-    vertical-align: baseline;
-    background: transparent;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
-    font-family: "MSGothic", sans-serif;
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
-    /*border:2px solid purple;*/
-    background-color: #070707;
-    color: #eeeeee;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
 
 .container {
     display: grid;
-    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content 1fr min-content;
+    gap: var(--gap-pr);
     width: 100vw;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    /*border: 2px solid green;*/
-    padding: 10px;
+    height: 100vh;
+    padding: var(--gap-pr);
 }
 
-.blocks {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    position: relative;
-    background-color: #0a0a0a;
+.vertical {
+    display: flex;
+    flex-direction: column;
 }
 
-.block1 {
-    grid-area: 1/1/3/2;
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
 }
 
-#day {
-    font-size: 2rem;
-    position: absolute;
-    /*top: 50%;*/
+.gap-60 {
+    gap: var(--gap-pr);
+}
+
+.gap-15 {
+    gap: var(--gap-sr);
+}
+
+.heading {
+    font-size: 4rem;
+}
+
+.upper {
     text-transform: uppercase;
 }
 
-.block2 {
-    grid-area: 3/1/4/2;
+p {
+    font-size: 1rem;
+}
+
+a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--text-color-sec);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+button {
+    min-width: var(--gap-pr);
+    padding: 0 var(--gap-sr);
+    border-radius: var(--border-radius);
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+.button-pr {
+    min-height: var(--gap-pr);
+    width: 100%;
+    padding: var(--gap-sr);
+}
+
+.highlight {
+    border: 2px solid gold;
+}
+
+input[type=text] {
+    min-height: var(--gap-sr);
+    width: 100%;
+    border-radius: var(--border-radius);
+    border: var(--border-settings);
+    color: var(--text-color);
+    background-color: var(--gap-pr);
+    padding: var(--gap-sr);
+}
+
+input[type=radio] {
+    height: var(--gap-sr);
+    width: var(--gap-sr);
+}
+
+#section1 {
+    grid-area: 1/1/2/2;
+}
+
+.progress-container {
+    min-width: var(--gap-pr);
+    width: 30%;
+    background-color: transparent;
+    height: var(--gap-sr);
+    border-top: var(--border-settings);
+    border-radius: var(--border-radius);
 }
 
 .progress-bar {
-    margin-bottom: 10px;
+    width: 0%;
+    height: var(--gap-sr);
+    background-color: var(--text-color);
+    border-radius: var(--border-radius);
+    transition: width 0.3s ease;
 }
 
-.bar {
-    width: 100%;
-    background-color: transparent;
-    border: 1px solid #eeeeee;
-    border-radius: 0px;
-    overflow: hidden;
-    position: relative;
+#section2 {
+    grid-area: 1/2/2/3;
 }
 
-.bar span {
-    display: block;
-    height: 15px;
-    line-height: 15px;
-    color: #eeeeee;
-    text-align: left;
-    padding-left: 10px;
-    background-color: #eeeeee;
-    width: 0;
-    transition: width 0.5s;
-    color: #869397;
-    font-size: 1rem;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-    color: #eeeeee;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.block3 {
-    grid-area: 3/3/5/5;
-}
-
-.sub-links {
+#weather-icon {
+    height: var(--gap-pr);
+    width: var(--gap-pr);
     display: flex;
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: var(--gap-sr);
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-radius: var(--border-radius);
+}
+
+#section3 {
+    grid-area: 2/1/3/2;
+}
+
+
+#section4 {
+    min-height: 200px;
+    height: 100%;
+    width: 100%;
+    align-items: stretch;
+    grid-area: 3/1/4/2;
+}
+
+#notes {
+    flex: 1;
     width: 100%;
     height: 100%;
-    padding-left: 0;
-    list-style: none;
-    /*border: 2px solid green*/;
+    border-top: var(--border-settings);
+    border-bottom: var(--border-settings);
+    padding: var(--gap-sr) 0;
+    align-items: start;
 }
 
-.sub-links>li {
-    padding-bottom: 10px;
-    text-transform: uppercase;
+#note-container {
+    height: 100%;
+    width: 100%;
 }
 
-.sub-links>li>a {
-    font-size: 0.8rem;
-    color: #eeeeee;
-    text-decoration: none;
+#note-input {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color-sec);
+    resize: none;
 }
 
-.sub-links>li>a:hover {
-    color: #B5B8BC;
+#todo {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border-top: var(--border-settings);
+    border-bottom: var(--border-settings);
+    padding: var(--gap-sr) 0;
 }
 
-.block4 {
-    grid-area: 4/1/5/2;
+#todo-container {
+    height: 100%;
+    width: 100%;
 }
 
-.links>li {
-    display: block;
-    padding: 10px 10px;
-    border-bottom: 1px solid #B5B8BC;
+#todo-container input {
+    display: inline;
+    padding: 0;
+    width: 100%;
+    color: var(--text-color);
+    background-color: var(--gap-pr);
+    border: none;
 }
 
-.links>li>a {
-    text-decoration: none;
-    color: #eeeeee;
-    font-size: 1rem;
-    text-transform: uppercase;
+#todo-list li {
+    width: 100%;
+    display: grid;
+    gap: var(--gap-sr);
+    grid-template-columns: 1fr min-content;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.block5{
-    grid-area: 4/2/5/3;
+#todo-list li span {
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
 }
-.block6{
-    grid-area: 1/2/4/3;
+
+#todo-list li.completed {
+    text-decoration: line-through;
+    color: var(--text-color-sec);
+}
+
+#section5 {
+    grid-area: 2/2/4/3;
+    height: 100%;
+    width: 100%;
+    min-height: 50vh;
+    align-items: stretch;
+    border-bottom: var(--border-settings);
+    padding-bottom: var(--gap-sr);
+}
+
+.link-lists {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--gap-sr);
+}
+
+.link-lists li {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.link-lists li button {
+    position: absolute;
+    right: 0px;
+    color: var(--text-color);
+    background-color: transparent;
+}
+
+#primary-list li {
+    min-height: var(--gap-sr);
+    border-radius: var(--border-radius);
+    border: var(--border-settings);
+    color: var(--text-color);
+    background-color: var(--gap-pr);
+    padding: var(--gap-sr);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.modals {
+    display: none;
+    padding: var(--gap-pr);
+    margin: auto;
+    width: 50%;
+    height: auto;
+    background-color: var(--bg-color);
+    border: var(--border-settings);
+    border-radius: var(--border-radius);
+}
+
+#close-btn {
+    color: var(--text-color-sec);
+    float: right;
+    cursor: pointer;
+}
+
+#section6 {
+    grid-area: 4/1/5/3;
+}
+
+#settings {
+    flex: 1;
+}
+
+#list-buttons {
+    flex: 1;
 }

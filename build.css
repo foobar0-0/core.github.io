@@ -65,7 +65,7 @@ body {
     font-size: 4rem;
 }
 
-h2{
+h2 {
     font-size: 2rem;
 }
 
@@ -273,6 +273,7 @@ input[type=radio] {
 }
 
 .link-lists li button {
+    text-align: right;
     position: absolute;
     right: 0px;
     color: var(--text-color);
@@ -285,9 +286,12 @@ input[type=radio] {
     border: var(--border-settings);
     color: var(--text-color);
     background-color: var(--gap-pr);
-    padding: var(--gap-sr);
 }
-#primary-list li a{
+
+#primary-list li a {
+    padding: var(--gap-sr);
+    display: inline-block;
+    width: 100%;
     word-wrap: break-word;
 }
 

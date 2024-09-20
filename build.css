@@ -123,6 +123,14 @@ input[type=radio] {
     width: var(--gap-sr);
 }
 
+::placeholder {
+    color: var(--text-color-sec);
+}
+
+::-ms-input-placeholder {
+    color: var(--text-color-sec);
+}
+
 #section1 {
     grid-area: 1/1/2/2;
 }
@@ -160,7 +168,8 @@ input[type=radio] {
     border-radius: var(--border-radius);
     font-size: 48px;
 }
-#weather-icon i{
+
+#weather-icon i {
     font-size: 24px;
 }
 
@@ -279,9 +288,11 @@ input[type=radio] {
     background-color: var(--gap-pr);
     padding: var(--gap-sr);
 }
-#secondary-list li a{
+
+#secondary-list li a {
     color: var(--text-color-sec);
 }
+
 .modal {
     display: none;
     position: fixed;
@@ -323,7 +334,7 @@ input[type=radio] {
     flex: 1;
 }
 
-#app-info{
+#app-info {
     font-size: 14px;
     color: var(--text-color-sec);
 }

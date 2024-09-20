@@ -243,6 +243,7 @@ document.addEventListener('DOMContentLoaded', loadNote);//maybe remove
 // Get references to the necessary DOM elements
 const modal = document.getElementById('link-dialog');
 const linkAddModal = document.getElementById('add-modal');
+const settingsModal = document.getElementById('settings-modal');
 const editListBtn = document.getElementById('edit-link-btn');
 const closeModalBtn = document.getElementById('link-close-btn');
 const addLinkBtn = document.getElementById('add-link-btn');
@@ -273,6 +274,7 @@ editListBtn.addEventListener('click', () => {
 closeModalBtn.addEventListener('click', () => {
     modal.style.display = 'none';
     linkAddModal.style.display = 'none';
+    settingsModal.style.display = 'none';
     isEditMode = false; // Exit edit mode when closing
     loadLinksFromLocalStorage(); // Refresh the list to hide delete buttons
 });
@@ -282,6 +284,7 @@ window.addEventListener('click', (event) => {
     if (event.target == modal) {
         modal.style.display = 'none';
         linkAddModal.style.display = 'none';
+        settingsModal.style.display = 'none';
         isEditMode = false; // Exit edit mode
         loadLinksFromLocalStorage(); // Refresh the list to hide delete buttons
     }
@@ -388,6 +391,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeSettingsBtn = document.getElementById('settings-close-btn');
     const saveSettingsBtn = document.getElementById('save-settings-btn');
     const modal = document.getElementById('link-dialog');
+    const linkAddModal = document.getElementById('add-modal');
 
     // Color pickers
     const bgColorPicker = document.getElementById('bg-color-input');
@@ -404,12 +408,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Close the settings modal
     closeSettingsBtn.addEventListener('click', () => {
         settingsModal.style.display = 'none';
+        linkAddModal.style.display = 'none';
         modal.style.display = 'none';
     });
     // Close the modal when clicking outside of the modal content
     window.addEventListener('click', (event) => {
         if (event.target == modal) {
             settingsModal.style.display = 'none';
+            linkAddModal.style.display = 'none';
             modal.style.display = 'none';// Refresh the list to hide delete buttons
         }
     });

@@ -279,7 +279,9 @@ input[type=radio] {
     background-color: var(--gap-pr);
     padding: var(--gap-sr);
 }
-
+#secondary-list li a{
+    color: var(--text-color-sec);
+}
 .modal {
     display: none;
     position: fixed;

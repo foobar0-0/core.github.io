@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', loadNote);//maybe remove
 const modal = document.getElementById('link-dialog');
 const linkAddModal = document.getElementById('add-modal');
 const editListBtn = document.getElementById('edit-link-btn');
-const closeModalBtn = document.getElementById('close-btn');
+const closeModalBtn = document.getElementById('link-close-btn');
 const addLinkBtn = document.getElementById('add-link-btn');
 const submitLinkBtn = document.getElementById('submit-link');
 const primaryList = document.getElementById('primary-list');
@@ -385,7 +385,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Open settings modal
     const settingsBtn = document.getElementById('settings-btn');
     const settingsModal = document.getElementById('settings-modal');
-    const closeSettingsBtn = document.getElementById('close-btn');
+    const closeSettingsBtn = document.getElementById('settings-close-btn');
     const saveSettingsBtn = document.getElementById('save-settings-btn');
     const modal = document.getElementById('link-dialog');
 

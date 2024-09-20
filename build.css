@@ -18,7 +18,7 @@
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     font-family: "DotGothic16", sans-serif;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-style: normal;
 }
 
@@ -65,16 +65,15 @@ body {
     font-size: 4rem;
 }
 
+h2{
+    font-size: 2rem;
+}
+
 .upper {
     text-transform: uppercase;
 }
 
-p {
-    font-size: 1rem;
-}
-
 a {
-    font-size: 1rem;
     text-decoration: none;
     color: var(--text-color);
 }
@@ -316,8 +315,8 @@ input[type=radio] {
     border-radius: var(--border-radius);
 }
 
-#close-btn {
-    color: var(--text-color-sec);
+.close-btn {
+    color: var(--text-color);
     float: right;
     cursor: pointer;
 }

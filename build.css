@@ -231,6 +231,7 @@ input[type=radio] {
 
 #todo-list li {
     width: 100%;
+    margin-bottom: var(--gap-sr);
     display: grid;
     gap: var(--gap-sr);
     grid-template-columns: 1fr min-content;

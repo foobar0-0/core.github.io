@@ -295,9 +295,6 @@ input[type=radio] {
     word-wrap: break-word;
 }
 
-#secondary-list li a {
-    color: var(--text-color-sec);
-}
 
 .modal {
     display: none;

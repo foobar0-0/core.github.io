@@ -169,7 +169,11 @@ function addTask() {
         alert('Please enter a task!');
     }
 }
-
+document.getElementById('new-task').addEventListener('keypress', function (event) {
+    if (event.key === 'Enter') {
+        addTask();  // Call the addTask function when Enter is pressed
+    }
+});
 // Function to delete a task
 function deleteTask(taskButton) {
     const taskItem = taskButton.parentElement;

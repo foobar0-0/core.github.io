@@ -326,6 +326,8 @@ submitLinkBtn.addEventListener('click', () => {
         document.getElementById('link-name').value = '';
         document.getElementById('link-url').value = '';
         modal.style.display = 'none';
+        linkAddModal.style.display = 'none';
+        settingsModal.style.display = 'none';
     }
 });
 
@@ -464,6 +466,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Close the modal
         settingsModal.style.display = 'none';
+        linkAddModal.style.display = 'none';
         modal.style.display = 'none';
     });
 

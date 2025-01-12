@@ -8,8 +8,8 @@
     --gap-sr: 10px;
 }
 @font-face {
-    font-family: "Proto Mono";
-    src: url("ProtoMono-Regular.woff") format("woff"),
+    font-family: "ProtoMono";
+    src: url("./ProtoMono-Regular.woff") format("woff"),
     }
 * {
     margin: 0;
@@ -20,7 +20,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
-    font-family: "Proto Mono", sans-serif;
+    font-family: "ProtoMono", sans-serif;
     font-size: 0.9rem;
     font-style: normal;
 }

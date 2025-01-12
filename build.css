@@ -7,7 +7,10 @@
     --gap-pr: 60px;
     --gap-sr: 10px;
 }
-
+@font-face {
+    font-family: "Proto Mono";
+    src: url("ProtoMono-Regular.woff") format("woff"),
+    }
 * {
     margin: 0;
     padding: 0;

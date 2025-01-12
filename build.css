@@ -325,6 +325,7 @@ input[type=radio] {
 
 .close-btn {
     color: var(--text-color);
+    font-size: 3em;
     float: right;
     cursor: pointer;
 }

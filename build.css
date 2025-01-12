@@ -5,7 +5,7 @@
     --border-radius: 4px;
     --border-settings: 1px solid var(--text-color);
     --gap-pr: 60px;
-    --gap-sr: 20px;
+    --gap-sr: 10px;
 }
 @font-face {
     font-family: "ProtoMono";
@@ -21,7 +21,7 @@
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     font-family: "ProtoMono", sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-style: normal;
 }
 

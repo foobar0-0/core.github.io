@@ -5,7 +5,7 @@
     --border-radius: 4px;
     --border-settings: 1px solid var(--text-color);
     --gap-pr: 60px;
-    --gap-sr: 10px;
+    --gap-sr: 20px;
 }
 @font-face {
     font-family: "ProtoMono";

@@ -93,7 +93,7 @@ ul {
 
 button {
     min-width: var(--gap-pr);
-    padding: 0 var(--gap-sr);
+    padding: calc(var(--gap-sr)/5) var(--gap-sr);
     border-radius: var(--border-radius);
     background-color: var(--text-color);
     color: var(--bg-color);
